@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(46, 46, 46);
+}
+
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+#memory-container {
+    margin: 5vh 15vw;
+}
+
+#title {
+    text-align: center;
+}
+
+#result {
+    margin-left: 1rem;
+}
+
+/* #grid-container {
+    margin: 0 8vw;
+} */
+#grid-container {
+    margin: 3vh 0;
+}
+
+#grid-container h4 {
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
