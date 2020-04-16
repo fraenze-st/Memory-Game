@@ -52,7 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
-    cardArray.sort(() => 0.7 - Math.random())
+    // cardArray.sort(() => 0.5 - Math.random())
+    //chose different kind of shuffle function
+    cardArray.sort(() => Math.floor(Math.random() * 12))
+
 
     const grid = document.querySelector(".grid");
     const resultDisplay = document.querySelector('#result');
@@ -62,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var cardsWon = [];
 
     //create your board
-
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
@@ -72,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(card)
         }
     }
-
 
 
     //check for matches
