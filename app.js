@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
-    // cardArray.sort(() => 0.5 - Math.random())
+    cardArray.sort(() => 0.5 - Math.random())
     //chose different kind of shuffle function
     cardArray.sort(() => Math.floor(Math.random() * 12))
 
